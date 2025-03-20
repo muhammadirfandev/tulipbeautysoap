@@ -259,10 +259,10 @@ nav i{
 }
 
 #pepsi{
-    top: -5%;
+    top: 0%;
     position: absolute;
-    width: 165%;
-    left: 45%;
+    width: 140%;
+    left: 48%;
     transform: translate(-50%, 0%);
     transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
 
