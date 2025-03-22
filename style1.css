@@ -13,14 +13,35 @@ Copyright: ©MdRasen */
   font-family: "Poppins", sans-serif;
 }
 
+.container11 {
+  min-height: 30vh;
+  padding: 0 8%;
+  background-color: rgb(57, 204, 57);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color:#ffffff;
+ 
+ 
+}
+
+.label1 {
+  
+  color: #000000;
+  text-align: left;
+  align-items: center;
+ font-family: 'Times New Roman', Times, serif;
+}
+
+
 /* Custom CSS */
 .container12 {
   width: 100%;
-  min-height: 50vh;
-  background: linear-gradient(rgba(255, 255, 255, 0.8), #fcaaaa), url(assets/bg.jpg);
+  min-height: 40vh;
+  background: linear-gradient(rgb(255, 255, 255), #fdcece), url(assets/bg.jpg);
   background-size:cover;
   background-position: center;
-  color: #fff;
+  color: #ddb2b2;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,13 +57,16 @@ Copyright: ©MdRasen */
 .header1 .title {
   font-family: "Clicker Script", cursive;
   font-size: 42px;
-  color: #000000;
+  color: #ffffff;
+  
 }
 
 .header1 .sub-title {
+  font-family: 'Times New Roman', Times, serif;
   font-size: 48px;
   line-height: 1;
-  color: #000000;
+  color: #ffffff;
+ 
 }
 
 .container12 .counters {
