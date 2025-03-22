@@ -99,8 +99,8 @@ mm2.add("(min-width: 800px)", () => {
 
     tl2.to('#fanta', {
         top: "220%",
-        left: "35%",
-        width: "30vw",
+        left: "31%",
+        width: "35vw",
     }, 'time1')
         .to('#orange2', {
             top: "200%",
