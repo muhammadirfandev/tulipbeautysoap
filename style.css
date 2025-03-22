@@ -90,7 +90,7 @@ nav {
 }
 
 .section1 {
-  background: #f1adcb;
+  background: #ff84b9;
   background-size: cover;
   background-position: center;
 }
@@ -130,8 +130,8 @@ nav {
 }
 
 #leaf1 {
-  left:-5%;
-  top:15%;
+  left:-10%;
+  top:10%;
 }
 
 #fanta {
@@ -141,6 +141,21 @@ left: 280px;
 
 }
 
+#orange3 {
+  top: 70%;
+  left: 95%;
+  width: 10vw;
+}
+#orange2 {
+  top: 35%;
+  left: 20%;
+  width: 15vw;
+}
+#orange1 {
+  top: 70%;
+  left: 0%;
+  width: 15vw;
+}
 #orange {
   top: 65%;
   left: 60%;
@@ -164,7 +179,7 @@ left: 280px;
 .section2 .lft {
   width: 50%;
   height: 100%;
-  background-color: #d8446a; 
+  background-color: #800080; 
 }
 
 .section2 .rght {
@@ -173,7 +188,7 @@ left: 280px;
   align-items: start;
   gap: 5vh;
   padding: 0vw 10vw 0vw 0vw;
-  background-color: #d8446a;
+  background-color: #800080;
 }
 
 .magicpattern {
