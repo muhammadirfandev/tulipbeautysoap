@@ -1,119 +1,178 @@
-var tl = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".two",
-    start: "0% 95%",
-    end: "70% 50%",
-    scrub: true,
-  },
+const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+    console.log(e)
+})
+
+function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
+
+let mm = gsap.matchMedia();
+
+mm.add("(min-width: 800px)", () => {
+    let tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.section1',
+            start: '50% 50%',
+            end: '130% 50%',
+            scrub: 1
+        }
+    });
+
+    tl.to('#leaf1', {
+        top: "120%",
+        left: "80%",
+        rotate: 90
+    }, 'timeO')
+        .to('#leaf2', {
+            top: "105%",
+            left: "5%",
+            rotate: 120
+        }, 'timeO')
+        .to('#fanta', {
+            top: "115%",
+            left: "5%",
+        }, 'timeO')
+        .to('#orange2', {
+            top: "150%",
+            left: "25%",
+        }, 'timeO')
+        .to('#orange', {
+            top: "160%",
+            left: "70%",
+        }, 'timeO')
 });
 
-tl.to(
-  "#fanta",
-  {
-    top: "120%",
-    left: "0%",
-  },
-  "orange"
-);
-tl.to(
-  "#orange-cut",
-  {
-    top: "160%",
-    left: "23%",
-  },
-  "orange"
-);
-tl.to(
-  "#orange",
-  {
-    width: "15%",
-    top: "165%",
-    right: "10%",
-  },
-  "orange"
-);
-tl.to(
-  "#leaf",
-  {
-    top: "100%",
-    rotate: "130deg",
-    left: "70%",
-  },
-  "orange"
-);
-tl.to(
-  "#leaf2",
-  {
-    top: "110%",
-    rotate: "130deg",
-    left: "0%",
-  },
-  "orange"
-);
+mm.add("(max-width: 799px)", () => {
+    let tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.section1',
+            start: '50% 50%',
+            end: '130% 50%',
+            scrub: 1
+        }
+    });
 
-var tl2 = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".three",
-    start: "0% 95%",
-    end: "20% 50%",
-    scrub: true,
-    // markers: true,
-  },
+    tl.to('#leaf1', {
+        top: "120%",
+        left: "80%",
+        rotate: 90
+    }, 'timeO')
+        .to('#leaf2', {
+            top: "105%",
+            left: "5%",
+            rotate: 120
+        }, 'timeO')
+        .to('#fanta', {
+            top: "1s%",
+            left: "5%",
+        }, 'timeO')
+        .to('#orange2', {
+            top: "110%",
+            left: "15%",
+        }, 'timeO')
+        .to('#orange', {
+            top: "160%",
+            left: "35%",
+            width: "65vw"
+        }, 'timeO')
+
 });
 
-tl2.from(
-  ".lemon1",
-  {
-    rotate: "-90deg",
-    left: "-100%",
-    top: "110%",
-  },
-  "ca"
-);
-tl2.from(
-  "#cocacola",
-  {
-    rotate: "-90deg",
-    top: "110%",
-    left: "-100%",
-  },
-  "ca"
-);
 
-tl2.from(
-  ".lemon2",
-  {
-    rotate: "90deg",
-    left: "100%",
-    top: "110%",
-  },
-  "ca"
-);
-tl2.from(
-  "#pepsi",
-  {
-    rotate: "90deg",
-    top: "110%",
-    left: "100%",
-  },
-  "ca"
-);
+let mm2 = gsap.matchMedia();
 
-tl2.to(
-  "#orange-cut",
-  {
-    width: "18%",
-    left: "14%",
-    top: "202%",
-  },
-  "ca"
-);
-tl2.to(
-  "#fanta",
-  {
-    width: "38%",
-    top: "216%",
-    left: "3.5%",
-  },
-  "ca"
-);
+mm2.add("(min-width: 800px)", () => {
+    let tl2 = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.section2',
+            start: '50% 50%',
+            end: '200% 100%',
+            scrub: 1,
+            // markers: true
+        }
+    });
+
+    tl2.to('#fanta', {
+        top: "220%",
+        left: "35%",
+        width: "30vw",
+    }, 'time1')
+        .to('#orange2', {
+            top: "200%",
+            left: "40%",
+            width: "20vw",
+        }, 'time1')
+        .from('#pineapplecut', {
+            y: 500,
+            x: -900,
+            rotate: -90,
+        }, 'time1')
+        .from('#pineapple', {
+            y: 300,
+            x: -700,
+            rotate: -90,
+        }, 'time1')
+        .from('#orangefruit', {
+            y: 500,
+            x: 900,
+            rotate: 90,
+        }, 'time1')
+        .from('#yellow', {
+            y: 300,
+            x: 700,
+            rotate: 90,
+        }, 'time1')
+});
+
+mm2.add("(max-width: 799px)", () => {
+    let tl2 = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.section3',
+            start: '0% 90%',
+            end: '100% 100%',
+            scrub: 1,
+            markers: true
+        }
+    });
+
+    tl2.from('#pineapplecut', {
+        y: 500,
+        x: -900,
+        rotate: -90,
+    }, 'time1')
+        .from('#pineapple', {
+            y: 300,
+            x: -700,
+            rotate: -90,
+        }, 'time1')
+        .from('#orangefruit', {
+            y: 500,
+            x: -900,
+            rotate: -90,
+        }, 'time1')
+        .from('#yellow', {
+            y: 300,
+            x: -700,
+            rotate: -90,
+        }, 'time1')
+        .from('#resp-orange', {
+            y: 500,
+            x: 900,
+            rotate: 90,
+        }, 'time1')
+        .from('#resp-fanta', {
+            y: 300,
+            x: 700,
+            rotate: 90,
+        }, 'time1')
+});
+
+
+
+
+
