@@ -99,7 +99,7 @@ nav {
   font-family: Arial B;
   font-size: 22vw;
   color: #d8446a;
-  word-spacing: 35px;
+  word-spacing: 50px;
 }
 
 .section1 img {
@@ -113,28 +113,29 @@ nav {
 }
 
 #fanta {
-top: 53%;
+top: 22%;
 width: 35vw;
 
 }
 
 #orange {
-  top: 65%;
-  left: 60%;
+  top: 45%;
+  left: 50%;
   width: 20vw;
 }
 
 #leaf2 {
-  top: 30%;
+  top: 10%;
   left: 80%;
   width: 20vw;
 }
 
 #orange2 {
-  top: 50%;
-  left: 25%;
+  top: 15%;
+  left: 34%;
   width: 15vw;
 }
+
 
 /* -------section-2 */
 .section2 .lft {
@@ -219,10 +220,14 @@ border-radius: 20px;
 }
 
 #pineapple {
-  width: 12vw;
+  top:-20%;
+  width: 14vw;
+
+  
 }
 #yellow {
-  width: 18vw;
+  top:-20%;
+  width: 14vw;
 }
 
 #pineapplecut,

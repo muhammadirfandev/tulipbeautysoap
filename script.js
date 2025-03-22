@@ -106,8 +106,10 @@ mm2.add("(min-width: 800px)", () => {
             top: "200%",
             left: "40%",
             width: "20vw",
+       
         }, 'time1')
         .from('#pineapplecut', {
+            
             y: 500,
             x: -900,
             rotate: -90,
@@ -127,7 +129,9 @@ mm2.add("(min-width: 800px)", () => {
             x: 700,
             rotate: 90,
         }, 'time1')
-});
+        
+}
+);
 
 mm2.add("(max-width: 799px)", () => {
     let tl2 = gsap.timeline({

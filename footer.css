@@ -78,6 +78,11 @@ ul{
 	color: #24262b;
 	background-color: #ffffff;
 }
+.footer-center{ 
+     margin-top: 20px;
+	 margin-tbottom: 0px;
+	color: #bbbbbb;
+}
 
 /*responsive*/
 @media(max-width: 767px){
