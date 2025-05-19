@@ -3,6 +3,14 @@ html.lenis body {
   height: auto;
 }
 
+html, body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+
+}
 .lenis.lenis-smooth {
   scroll-behavior: auto !important;
 }
@@ -143,7 +151,7 @@ left: 280px;
 
 #orange3 {
   top: 70%;
-  left: 95%;
+  left: 90%;
   width: 10vw;
 }
 #orange2 {
@@ -372,3 +380,5 @@ border-radius: 20px;
     display: initial;
   }
 }
+
+
